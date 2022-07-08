@@ -1,3 +1,4 @@
+  <head>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +17,7 @@
       crossorigin="anonymous"
     ></script>
      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
@@ -33,8 +34,11 @@
                 aria-label="Search"
                  id="city-input"
               />
-              <button type="submit">
-                Show weather <img src="images/forecast.svg" alt="" width="30">
+              <button type="submit" id="show-button">
+                Show  <img src="images/forecast.svg" alt="" width="30">
+              </button>
+              <button type="submit" id="current-button">
+                Current 
               </button>
             </form>
           </div>
@@ -57,7 +61,7 @@
         <p class="card-text">
           <div class="row">
             <div class="col">
-              <span id="current-temperature">21</span><span class="Celsius-units"> <a href=“#” id=“Celsius”>°C</a></span>|<span id="Fahrenheit-units"><a href=“#” id=“Fahrenheit”>F</a></span>
+              <span id="current-temperature">21</span><span class="Celsius-units"> <a href=“#” id="Celsius">°C</a></span>|<span id="Fahrenheit-units"><a href=“#” id="Fahrenheit">F</a></span>
             </div>
             <div class="col">Wind:9-12 m/s</div>
           </div>
@@ -150,6 +154,6 @@
         </div>
       </div>
     </div>
-    <script src="javascript.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
