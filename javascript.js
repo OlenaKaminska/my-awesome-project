@@ -58,7 +58,9 @@ function showTemperature(response) {
   let city = document.querySelector("#city-name");
   city.innerHTML = response.data.name;
   let wind = document.querySelector("#wind");
-  wind.innerHTML = response.data.wind.speed;
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  let humidity = document.querySelector("#humidity");
+  humidity.innerHTML = response.data.main.humidity;
 }
 
 function showPosition(position) {
