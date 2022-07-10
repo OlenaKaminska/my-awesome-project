@@ -61,6 +61,8 @@ function showTemperature(response) {
   wind.innerHTML = Math.round(response.data.wind.speed);
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
+  let description = document.querySelector("#description");
+  description.innerHTML = response.data.weather[0].main;
 }
 
 function showPosition(position) {
